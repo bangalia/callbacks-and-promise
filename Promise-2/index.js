@@ -15,6 +15,21 @@ function asyncNumberChecker(n) {
 // Handle success with .then() and errors with .catch()
 
 asyncNumberChecker(10)
-
+  .then((message) => {
+    console.log("Number is less than 10 ✅")
+    console.log(message)
+  })
+  .catch((err) => {
+    console.log("Number is not less than 10 ❌")
+    console.log(err)
+  })
 
 asyncNumberChecker(5)
+  .then((message) => {
+    console.log("Number is less than 10 ✅")
+    console.log(message)
+  })
+  .catch((err) => {
+    console.log("Number is not less than 10 ❌")
+    console.log(err)
+  })

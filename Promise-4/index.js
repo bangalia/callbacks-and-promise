@@ -1,10 +1,12 @@
 const food = new Promise((resolve, reject) => {
-  
-})
+    setTimeout(() => {
+      resolve("Pizza!")
+    }, 2000)
+  })
 
 
 // resolve food here: 
-
+food.then((food) => console.log(food))
 
 
 // **Challenge 1** Resolve your promise with the name of your favorite food. 
